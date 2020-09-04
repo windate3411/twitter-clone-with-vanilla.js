@@ -19,6 +19,7 @@ body
   grid-template-columns repeat(2,1fr)
   grid-template-rows 1fr min-content
 
+  // left side
   .left
     grid-area 1/1/2/2
     background-color #1aa1f5
@@ -38,7 +39,9 @@ body
       align-items center
       margin 4rem
       color #fff
+  // end of left side
 
+  // right side form
   .right
     grid-area 1/2/2/-1
     position relative
@@ -88,7 +91,9 @@ body
         font-size 1.6rem
         font-weight 400
         color #a7a6a6 
+    // end of right side form
 
+    // right side middle content
     .middle-content
       position absolute 
       top 50%
@@ -121,7 +126,6 @@ body
         cursor pointer
         transition backgroud-color 0.3s ease-in
 
-
         &.sign-up 
           color #fff
           background-color #1aa1f5
@@ -134,7 +138,32 @@ body
 
           &:hover
             background-color #d9ebf7
+    // end of right side middle content
 
+  // main-page-footer
+  .main-page-footer
+    grid-area 2/1/-1/-1
+    background-color #f5f4f4
+    padding 1.5rem
+    border-top .1rem solid #ddd
+
+    ul
+      display flex
+      justify-content center
+      list-style none
+      
+      a
+        font-size 1.6rem
+        margin 0 2rem
+        text-decoration none
+        color #444
+        font-weight 300
+        transition color
+
+        &:hover
+          color coral
+
+  // end of main-page-footer
 
 
 

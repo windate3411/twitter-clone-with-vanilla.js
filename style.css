@@ -132,3 +132,25 @@ body {
 .main-page .right .middle-content button.log-in:hover {
   background-color: #d9ebf7;
 }
+.main-page .main-page-footer {
+  grid-area: 2/1/-1/-1;
+  background-color: #f5f4f4;
+  padding: 1.5rem;
+  border-top: 0.1rem solid #ddd;
+}
+.main-page .main-page-footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.main-page .main-page-footer ul a {
+  font-size: 1.6rem;
+  margin: 0 2rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: 300;
+  transition: color;
+}
+.main-page .main-page-footer ul a:hover {
+  color: #ff7f50;
+}
