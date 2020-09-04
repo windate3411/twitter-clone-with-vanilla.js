@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
+  outline: 0;
 }
 html {
   font-size: 62.5%;
@@ -27,9 +28,107 @@ body {
   font-size: 3rem;
   margin-right: 2rem;
 }
+.main-page .left .left-content-heading {
+  font-size: 2rem;
+}
 .main-page .left .list-item {
   display: flex;
   align-items: center;
   margin: 4rem;
   color: #fff;
+}
+.main-page .right {
+  grid-area: 1/2/2/-1;
+  position: relative;
+}
+.main-page .right .right-content-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.main-page .right .right-content-form .btn-top {
+  width: 8rem;
+  background-color: #fff;
+  color: #1aa1f5;
+  border: 0.1rem solid #1aa1f5;
+  border-radius: 3rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+.main-page .right .right-content-form .btn-top:hover {
+  background-color: #d9ebf7;
+}
+.main-page .right .right-content-form input {
+  width: 20rem;
+  height: 4.5rem;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  padding: 0 1rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  transition: transform 0.1s ease-in;
+}
+.main-page .right .right-content-form input:focus,
+.main-page .right .right-content-form input:hover {
+  transform: scale(1.05);
+  background-color: #d9ebf7;
+}
+.main-page .right .right-content-form .password-wrapper {
+  position: relative;
+}
+.main-page .right .right-content-form label {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #a7a6a6;
+}
+.main-page .right .middle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.main-page .right .middle-content i {
+  font-size: 4rem;
+  color: #1aa1f5;
+  margin-bottom: 2rem;
+}
+.main-page .right .middle-content h1 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  line-height: 4rem;
+}
+.main-page .right .middle-content h4 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.main-page .right .middle-content button {
+  margin: 0.8rem 0;
+  padding: 0.5rem;
+  border-radius: 4rem;
+  border: 0.1rem solid #1aa1f5;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: backgroud-color 0.3s ease-in;
+}
+.main-page .right .middle-content button.sign-up {
+  color: #fff;
+  background-color: #1aa1f5;
+}
+.main-page .right .middle-content button.sign-up:hover {
+  background-color: #0f5d8d;
+}
+.main-page .right .middle-content button.log-in {
+  background-color: #fff;
+}
+.main-page .right .middle-content button.log-in:hover {
+  background-color: #d9ebf7;
 }
