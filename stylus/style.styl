@@ -1,3 +1,5 @@
+@import './_color'
+
 * 
   margin 0
   padding 0
@@ -22,7 +24,7 @@ body
   // left side
   .left
     grid-area 1/1/2/2
-    background-color #1aa1f5
+    background-color $main-color
     display flex
     justify-content center
     align-items center
@@ -54,8 +56,8 @@ body
       .btn-top
         width 8rem
         background-color #fff
-        color #1aa1f5
-        border 0.1rem solid #1aa1f5
+        color $main-color
+        border 0.1rem solid $main-color
         border-radius 3rem
         cursor pointer
         font-size 1.4rem
@@ -63,7 +65,7 @@ body
         transition background-color 0.3s ease-in-out
 
         &:hover
-          background-color: #d9ebf7
+          background-color: $button-hover-color-light
 
       input
         width 20rem
@@ -78,7 +80,7 @@ body
 
         &:focus, &:hover
           transform scale(1.05)
-          background-color #d9ebf7
+          background-color $button-hover-color-light
 
 
       .password-wrapper
@@ -105,7 +107,7 @@ body
 
       i
         font-size 4rem
-        color #1aa1f5
+        color $main-color
         margin-bottom 2rem
 
       h1 
@@ -121,23 +123,23 @@ body
         margin 0.8rem 0
         padding 0.5rem
         border-radius 4rem
-        border .1rem solid #1aa1f5
+        border .1rem solid $main-color
         font-size 1.6rem
         cursor pointer
         transition backgroud-color 0.3s ease-in
 
         &.sign-up 
           color #fff
-          background-color #1aa1f5
+          background-color $main-color
 
           &:hover
-            background-color #0f5d8d
+            background-color $button-hover-color-dark
         
         &.log-in
           background-color #fff
 
           &:hover
-            background-color #d9ebf7
+            background-color $button-hover-color-light
     // end of right side middle content
 
   // main-page-footer
