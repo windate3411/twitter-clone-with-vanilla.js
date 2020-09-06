@@ -160,12 +160,56 @@ body {
   display: grid;
   grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
   grid-template-rows: repeat(2, min-content) 1fr;
-  grip-row-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
 }
 .login-page .login-page-nav {
   grid-area: 1/1/2/-1;
   background-color: #fff;
   padding: 2.5rem 0;
+  box-shadow: 0 0 0.3rem rgba(0,0,0,0.3);
+}
+.login-page .login-page-nav ul {
+  width: 100rem;
+  margin: auto;
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+.login-page .login-page-nav ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+.login-page .login-page-nav ul li:last-child {
+  margin-left: auto;
+}
+.login-page .login-page-nav ul li::after {
+  content: '';
+  width: 100%;
+  height: 0.4rem;
+  background-color: #1aa1f5;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+  opacity: 0;
+}
+.login-page .login-page-nav ul li:hover {
+  transition: opacity 0.3s ease-in;
+}
+.login-page .login-page-nav ul li:hover::after {
+  opacity: 1;
+}
+.login-page .login-page-nav ul li:hover a {
+  color: #1aa1f5;
+}
+.login-page .login-page-nav ul a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease-in;
+}
+.login-page .login-page-nav ul i {
+  color: #1aa1f5;
+  font-size: 2rem;
 }
 .login-page .login {
   grid-area: 2/2/3/3;
