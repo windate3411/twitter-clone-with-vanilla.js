@@ -160,7 +160,7 @@ body
         text-decoration none
         color #444
         font-weight 300
-        transition color
+        transition color 0.3s ease-in
 
         &:hover
           color coral
@@ -389,8 +389,69 @@ body
         color #444
         font-size 1.6rem
 
-  // feeds header
-  
-  // end of feeds header
+  // feeds content
+  .feeds-content
+    display grid
+    grid-template-columns minmax(5rem, 1fr) 60rem  40rem  minmax(5rem, 1fr)
+    grid-template-rows repeat(2,min-content)
+    padding-top 7rem
+
+    .feeds-header
+      grid-area 1/2/2/3
+      background-color #fff
+      margin-top 1.5rem
+
+      .header-top
+        display flex
+        align-items center
+        justify-content space-between
+        border-bottom 0.1rem solid #eee
+        padding 1.5rem
+        
+        h4
+          font-size 2.2rem
+        
+        i
+          font-size 2rem
+          color $main-color
+      
+      .header-post
+        display flex
+        align-items center
+        border-bottom 0.1rem solid #eee
+        padding 1rem
+
+        .header-image-wrapper
+          width 4rem
+          height 4rem
+          margin-right 1.5rem
+
+          img
+            height 100%
+            width 100%
+            object-fit cover
+            border-radius 50%
+        
+        input
+          width 35rem
+          height 3rem
+          border .1rem solid #d6e1e9
+          border-radius 3rem
+          background-color #d6e1e9
+          padding .4rem 1.5rem
+          transition all 0.3s ease-in
+
+          &:focus
+            border 0.1rem solid $main-color
+            background-color #fff
+            color #222
+        
+        i
+          font-size 2.5rem
+          color $main-color
+          margin 1rem
+
+
+  // end of feeds content
 
 // end of feeds page
