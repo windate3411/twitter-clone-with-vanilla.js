@@ -7,6 +7,7 @@ const btnTop = document.querySelector('.btn-top')
 const newFeedsPage = document.querySelector('.feeds-page')
 const loginModal = document.querySelector('.login-modal')
 const loginModalCloseBtn = document.querySelector('#login-modal-close')
+const loginFormBtn = document.querySelector('.login-form-btn')
 
 // handlers
 
@@ -27,12 +28,23 @@ btnTop.addEventListener('click', (e) => {
   const inputUserInfo = document.querySelector('.user-info')
   const inputUserPassword = document.querySelector('.user-password')
 
-  if (inputUserInfo.value && inputUserPassword) {
+  if (inputUserInfo.value && inputUserPassword.value) {
     changeElementDisplay(newFeedsPage, 'block')
     changeElementDisplay(mainPage, 'none')
     return
   }
   goToLoginPage()
+  changeElementDisplay(loginModal, 'block')
+})
+
+loginFormBtn.addEventListener('click', (e) => {
+  const loginUserInfo = document.querySelector('.login-user-info')
+  const loginUserPassword = document.querySelector('.login-user-password')
+  if (loginUserInfo.value && loginUserPassword.value) {
+    changeElementDisplay(newFeedsPage, 'block')
+    changeElementDisplay(loginPage, 'none')
+    return
+  }
   changeElementDisplay(loginModal, 'block')
 })
 

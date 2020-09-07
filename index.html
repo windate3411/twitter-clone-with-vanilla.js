@@ -110,8 +110,16 @@
         <div class="login-content">
           <h2>Log in to Twitter</h2>
           <form class="login-form">
-            <input type="text" placeholder="Phone, email or username" />
-            <input type="password" placeholder="Password" />
+            <input
+              type="text"
+              placeholder="Phone, email or username"
+              class="login-user-info"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              class="login-user-password"
+            />
             <div>
               <button class="login-form-btn">Log In</button>
               <input type="checkbox" class="login-form-checkbox" id="check" />
@@ -379,6 +387,37 @@
       <button type="button" class="post-btn">
         +<i class="fas fa-feather-alt"></i>Post
       </button>
+
+      <!-- post modal -->
+      <div class="modal-wrapper">
+        <div class="modal">
+          <div class="modal-header">
+            <i class="fas fa-times"></i>
+            <button type="button">Post</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-img">
+              <img src="./images/user1.jpg" alt="user1 image" />
+            </div>
+            <input
+              type="text"
+              placeholder="What's on your mind?"
+              class="modal-input"
+            />
+            <i class="far fa-smile"></i>
+          </div>
+          <div class="modal-footer">
+            <div class="modal-icons">
+              <i class="far fa-image"></i>
+              <i class="fas fa-camera"></i>
+              <i class="far fa-chart-bar"></i>
+              <i class="modal-text-count">140 words left</i>
+              <span>+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of post modal -->
     </section>
     <!-- end of feed page -->
   </body>
