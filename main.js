@@ -8,6 +8,13 @@ const newFeedsPage = document.querySelector('.feeds-page')
 const loginModal = document.querySelector('.login-modal')
 const loginModalCloseBtn = document.querySelector('#login-modal-close')
 const loginFormBtn = document.querySelector('.login-form-btn')
+const postBtn = document.querySelector('.post-btn')
+const modalWrapper = document.querySelector('.modal-wrapper')
+const postModal = document.querySelector('.modal')
+const postModalX = document.querySelector('.modal-header i')
+const modalPostBtn = document.querySelector('.modal-header button')
+const modalFooterPlus = document.querySelector('.modal-text-wrapper span')
+const modalInput = document.querySelector('.modal-input')
 
 // handlers
 
@@ -48,6 +55,59 @@ loginFormBtn.addEventListener('click', (e) => {
   changeElementDisplay(loginModal, 'block')
 })
 
+// post modal
+
+postBtn.addEventListener('click', (e) => {
+  changeElementDisplay(postModal, 'block')
+  modalWrapper.classList.add('modal-wrapper-display')
+})
+
+postModalX.addEventListener('click', () => {
+  closePostModal()
+})
+
+modalInput.addEventListener('keypress', (e) => {
+  if (e.target.value !== '') changeModalBtnOpacity(1)
+})
+
+modalInput.addEventListener('blur', (e) => {
+  if (e.target.value === '') changeModalBtnOpacity(0.5)
+})
+
+// post btns
+
+modalPostBtn.addEventListener('click', () => {
+  displayDummyMessage()
+  closePostModal()
+})
+
+modalFooterPlus.addEventListener('click', () => {
+  displayDummyMessage()
+  closePostModal()
+})
+
+// utils
+
 function changeElementDisplay(element, newDisplay) {
   element.style.display = newDisplay
+}
+
+function changeModalBtnOpacity(value) {
+  modalPostBtn.style.opacity = value
+  modalFooterPlus.style.opacity = value
+}
+
+function displayDummyMessage() {
+  alert(
+    "You've add a new tweet! \nBut unfortunately in this project the tweet function doesn't really work\nIt's just a simple demo.\nSorry if that's an issue for you😢"
+  )
+}
+
+function closePostModal() {
+  changeElementDisplay(postModal, 'none')
+  modalWrapper.classList.remove('modal-wrapper-display')
+  if (modalInput.value !== '') {
+    modalInput.value = ''
+    changeModalBtnOpacity(0.5)
+  }
 }

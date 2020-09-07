@@ -595,8 +595,14 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
+  opacity: 0;
+  visibility: hidden;
 }
-.feeds-page .modal-wrapper .modal {
+.feeds-page .modal-wrapper-display {
+  opacity: 1;
+  visibility: visible;
+}
+.feeds-page .modal-wrapper-display .modal {
   background-color: #fff;
   width: 60rem;
   position: absolute;
@@ -604,20 +610,21 @@ body {
   top: 25%;
   transform: translate(-50%, -50%);
   border-radius: 1.5rem;
+  display: none;
 }
-.feeds-page .modal-wrapper .modal .modal-header {
+.feeds-page .modal-wrapper-display .modal .modal-header {
   font-size: 1.6rem;
   padding: 1.5rem 2.5rem;
   display: flex;
   align-items: center;
   border-bottom: 0.1rem solid #eee;
 }
-.feeds-page .modal-wrapper .modal .modal-header i {
+.feeds-page .modal-wrapper-display .modal .modal-header i {
   font-size: 2.5rem;
   color: #1aa1f5;
   cursor: pointer;
 }
-.feeds-page .modal-wrapper .modal .modal-header button {
+.feeds-page .modal-wrapper-display .modal .modal-header button {
   margin-left: auto;
   width: 8rem;
   padding: 0.8rem 0.5rem;
@@ -628,22 +635,22 @@ body {
   opacity: 0.5;
   cursor: pointer;
 }
-.feeds-page .modal-wrapper .modal .modal-body {
+.feeds-page .modal-wrapper-display .modal .modal-body {
   display: flex;
   padding: 2rem 1.5rem 1rem 1.5rem;
 }
-.feeds-page .modal-wrapper .modal .modal-body .modal-img {
+.feeds-page .modal-wrapper-display .modal .modal-body .modal-img {
   width: 4rem;
   height: 4rem;
   margin-right: 1.5rem;
 }
-.feeds-page .modal-wrapper .modal .modal-body .modal-img img {
+.feeds-page .modal-wrapper-display .modal .modal-body .modal-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
-.feeds-page .modal-wrapper .modal .modal-body .modal-input {
+.feeds-page .modal-wrapper-display .modal .modal-body .modal-input {
   width: 53rem;
   padding: 1rem 0 8rem 1rem;
   background-color: #d6e1e9;
@@ -651,40 +658,40 @@ body {
   border-radius: 1.5rem;
   font-size: 1.6rem;
 }
-.feeds-page .modal-wrapper .modal .modal-body .modal-input:focus {
+.feeds-page .modal-wrapper-display .modal .modal-body .modal-input:focus {
   background-color: #fff;
   border-color: #1aa1f5;
 }
-.feeds-page .modal-wrapper .modal .modal-body i {
+.feeds-page .modal-wrapper-display .modal .modal-body i {
   position: absolute;
   bottom: 8.5rem;
   right: 2.8rem;
   font-size: 2rem;
   color: #1aa1f5;
 }
-.feeds-page .modal-wrapper .modal .modal-footer {
+.feeds-page .modal-wrapper-display .modal .modal-footer {
   padding: 0 2rem 2rem;
 }
-.feeds-page .modal-wrapper .modal .modal-footer .modal-icons {
+.feeds-page .modal-wrapper-display .modal .modal-footer .modal-icons {
   display: flex;
   align-items: center;
 }
-.feeds-page .modal-wrapper .modal .modal-footer .modal-icons i {
+.feeds-page .modal-wrapper-display .modal .modal-footer .modal-icons i {
   margin-right: 2rem;
   font-size: 2.7rem;
   color: #1aa1f5;
   cursor: pointer;
 }
-.feeds-page .modal-wrapper .modal .modal-footer .modal-icons .modal-text-wrapper {
+.feeds-page .modal-wrapper-display .modal .modal-footer .modal-icons .modal-text-wrapper {
   margin-left: auto;
 }
-.feeds-page .modal-wrapper .modal .modal-footer .modal-icons .modal-text-wrapper .modal-text-count {
+.feeds-page .modal-wrapper-display .modal .modal-footer .modal-icons .modal-text-wrapper .modal-text-count {
   font-size: 1.2rem;
   color: #222;
   margin-left: auto;
   margin-right: 1rem;
 }
-.feeds-page .modal-wrapper .modal .modal-footer .modal-icons .modal-text-wrapper span {
+.feeds-page .modal-wrapper-display .modal .modal-footer .modal-icons .modal-text-wrapper span {
   font-size: 5rem;
   width: 4rem;
   height: 4rem;
