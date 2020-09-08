@@ -746,7 +746,108 @@ body
               cursor pointer
           
 
-  // end of post-modal  
+  // end of post-modal
+
+  // sidebar
+  .sidebar-wrapper
+    position fixed
+    background-color rgba(0,0,0,0.5)
+    top 0
+    right 0
+    bottom 0
+    left 0
+
+    .sidebar
+      position fixed
+      top 0
+      right 0
+      width 30rem
+      height 100vh
+      background-color #fff
+      padding 2.5rem
+      box-sizing border-box
+      box-shadow -.1rem 0 .5rem rgba(0,0,0,0.5)
+
+      .sidebar-header
+        display flex
+        align-items center
+        padding-bottom 1.5rem
+        border-bottom .1rem solid #eee
+
+        h2
+          font-size 2rem
+        
+        i
+          margin-left auto
+          font-size 2.5rem
+          color $main-color
+          cursor pointer
+      
+      .sidebar-user
+        display flex
+        align-items center
+        padding-top 1.5rem
+
+        .side-user-img
+          height 4rem
+          width 4rem
+
+          img
+            height 100%
+            width 100%
+            object-fit cover
+            border-radius 50%
+
+        span
+          margin-left auto
+          width 3.5rem
+          height 3.5rem
+          font-size 5rem
+          border .1rem solid $main-color
+          border-radius 50%
+          display flex
+          justify-content center
+          align-items center
+          color $main-color
+
+      .sidebar-user-info
+        padding 1.5rem 0
+        font-size 1.8rem
+
+        h4
+          margin-bottom .5rem
+
+      .following
+        display flex
+        padding 1.5rem 0
+
+        .following-paragraph
+          font-size 1.5rem
+
+          span
+            font-weight bold
+
+          &:first-child
+            margin-right 2.5rem 
+
+      .sidebar-list-1, .sidebar-list-2
+        border-bottom .1rem solid #eee
+
+        ul
+          list-style none
+          padding 1.5rem
+
+          li
+            margin-bottom 2.5rem
+
+            a
+              text-decoration none
+              font-size 1.6rem
+              color #868383
+
+              i
+                margin-right 1rem
+  // end of sidebar  
 
 // end of feeds page
 
