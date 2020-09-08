@@ -21,6 +21,10 @@ const sidebarWrapper = document.querySelector('.sidebar-wrapper')
 const sidebarX = document.querySelector('.sidebar i')
 const toggle = document.querySelector('.toggle')
 const circle = document.querySelector('.toggle .circle')
+const darkElements1 = document.querySelectorAll('.dark-mode-1')
+const darkElements2 = document.querySelectorAll('.dark-mode-2')
+const lightTextElements = document.querySelectorAll('.light-text')
+const borders = document.querySelectorAll('.border')
 
 // handlers
 
@@ -106,6 +110,22 @@ sidebarX.addEventListener('click', () => {
 // dark mode
 toggle.addEventListener('click', () => {
   circle.classList.toggle('move')
+
+  Array.from(darkElements1).map((darkEl) => {
+    darkEl.classList.toggle('dark-1')
+  })
+
+  Array.from(darkElements2).map((darkEl) => {
+    darkEl.classList.toggle('dark-2')
+  })
+
+  Array.from(lightTextElements).map((lightEl) => {
+    lightEl.classList.toggle('light')
+  })
+
+  Array.from(borders).map((border) => {
+    border.classList.toggle('border-color')
+  })
 })
 
 // utils

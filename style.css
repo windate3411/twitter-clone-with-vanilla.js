@@ -822,6 +822,7 @@ body {
 .feeds-page .dark-mode {
   display: flex;
   align-items: center;
+  margin-top: 1rem;
 }
 .feeds-page .dark-mode p {
   margin-right: 8rem;
@@ -851,4 +852,16 @@ body {
 .feeds-page .dark-mode .toggle .move {
   left: 2.4rem;
   background-color: #117abb;
+}
+.feeds-page .dark-1 {
+  background-color: #1c2938 !important;
+}
+.feeds-page .dark-2 {
+  background-color: #10171e !important;
+}
+.feeds-page .light {
+  color: #fff !important;
+}
+.feeds-page .border-color {
+  border-color: #444 !important;
 }
