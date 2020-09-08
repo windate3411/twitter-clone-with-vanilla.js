@@ -255,6 +255,9 @@ body
       display flex
       flex-direction column
 
+      .login-form-checkbox
+        transform: translateY(1.5px)
+
       label
         font-size 1.6rem
         font-weight 300
@@ -278,7 +281,7 @@ body
 
       input:not(.login-form-checkbox)
         height 3.5rem
-        width 30rem
+        width 25rem
         margin-bottom 1rem
         border .1rem solid #ddd
         border-radius 0.5rem
@@ -951,6 +954,21 @@ body
     .main-page-footer
       grid-row 3/4
 
+  // login page
+  .login-page-nav ul, .login
+    width 80rem !important
+
+  .login-modal
+    width 60rem !important
+
+@media(max-width: 900px)
+  // login page
+  .login-page-nav ul, .login
+    width 60rem !important
+
+  .login-modal
+    width 50rem !important
+
 @media(max-width: 800px)
   // main page
   .right
@@ -969,6 +987,15 @@ body
   .left-content
     width 60%
 
+@media(max-width: 700px)
+  // login page
+  .login-page-nav ul, .login
+    width 50rem !important
+
+  .login-modal
+    width 40rem
+
+
 @media(max-width: 600px)
   // main page
   .main-page
@@ -981,8 +1008,48 @@ body
     grid-row 1/2
     width 90%
 
+  // login page
+  .login-page-nav ul, .login
+    width 40rem !important
+
+  .login
+    grid-template-columns 5rem 8fr
+
+    label, a
+      font-size 1.4rem
+    
+    .login-footer
+      padding-left 5rem
+      font-size 1.4rem
+  
+  .login-modal
+    width 30rem !important
+
+    p
+      font-size 1.4rem
+    i
+      top 2.5rem
+        
 @media(max-width: 500px)
   // main page
   .middle-content h1
     font-size 2.5rem
+
+  // login page
+  .login-page-nav ul, .login
+    width 30rem
+
+  .login
+    grid-template-columns 2rem 8fr
+
+    .login-form
+      a
+        display block
+        margin-top 1rem
+
+      input:not(.login-form-checkbox)
+        width 20rem !important
+    
+    .login-footer
+      padding-left 2rem
 // end of RWD
