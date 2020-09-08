@@ -97,14 +97,11 @@ modalFooterPlus.addEventListener('click', () => {
 })
 
 // sidebar
-user.addEventListener('click', () => {
-  sidebar.classList.add('sidebar-display')
-  sidebarWrapper.classList.add('sidebar-wrapper-display')
-})
 
-sidebarX.addEventListener('click', () => {
-  sidebar.classList.remove('sidebar-display')
-  sidebarWrapper.classList.remove('sidebar-wrapper-display')
+const sidebarElements = [user, sidebarX, sidebarWrapper]
+
+sidebarElements.forEach((element) => {
+  element.addEventListener('click', switchSidebarDisplay)
 })
 
 // dark mode
@@ -152,4 +149,14 @@ function closePostModal() {
     modalInput.value = ''
     changeModalBtnOpacity(0.5)
   }
+}
+
+function switchSidebarDisplay() {
+  if (sidebar.classList.contains('sidebar-display')) {
+    sidebar.classList.remove('sidebar-display')
+    sidebarWrapper.classList.remove('sidebar-wrapper-display')
+    return
+  }
+  sidebar.classList.add('sidebar-display')
+  sidebarWrapper.classList.add('sidebar-wrapper-display')
 }
