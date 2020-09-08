@@ -1,4 +1,6 @@
 @import './_color'
+@import './_mixins'
+
 
 * 
   margin 0
@@ -58,7 +60,7 @@ body
         background-color #fff
         color $main-color
         border 0.1rem solid $main-color
-        border-radius 3rem
+        border-radius(3rem)
         cursor pointer
         font-size 1.4rem
         font-weight bold
@@ -74,7 +76,7 @@ body
         font-size 1.6rem
         padding 0 1rem
         border 0.1rem solid #ddd 
-        border-radius 0.5rem
+        border-radius(0.5rem)
         background-color #fff
         transition transform 0.1s ease-in
 
@@ -122,7 +124,7 @@ body
       button 
         margin 0.8rem 0
         padding 0.5rem
-        border-radius 4rem
+        border-radius(4rem)
         border .1rem solid $main-color
         font-size 1.6rem
         cursor pointer
@@ -272,7 +274,7 @@ body
         padding 1rem 1.5rem
         background-color $main-color
         color #fff
-        border-radius 4rem
+        border-radius(4rem)
         border 0.1rem solid $main-color
         font-size 1.5rem
         font-weight bold
@@ -284,7 +286,7 @@ body
         width 25rem
         margin-bottom 1rem
         border .1rem solid #ddd
-        border-radius 0.5rem
+        border-radius(0.5rem)
         padding-left 1rem
         font-size 1.5rem
         transition background-color 0.3s ease-in
@@ -326,7 +328,7 @@ body
     box-shadow 0 0 .7rem rgba(0,0,0,0.3)
     border-radius 0 0 1rem 1rem
     font-size 1.6rem
-    color #868383
+    color $dark-gray
     display none
 
     i
@@ -362,7 +364,7 @@ body
         text-decoration none
         margin-right 6rem
         font-size 2.5rem
-        color #9e9a9a
+        color $light-gray-darken 
 
         &.active
           color $main-color
@@ -375,9 +377,9 @@ body
       input
         width 35rem
         height 3rem
-        border-radius 3rem
-        border 0.1rem solid #d6e1e9
-        background-color #d6e1e9
+        border-radius(3rem)
+        border 0.1rem solid $light-gray
+        background-color $light-gray
         padding-left 5rem
         transition all 0.3s ease-in
 
@@ -389,7 +391,7 @@ body
         position absolute
         font-size 1.6rem
         left 1.5rem
-        color #9e9a9a
+        color $light-gray-darken 
     
     .user
       margin-left 3rem
@@ -402,10 +404,7 @@ body
         height 4rem
 
         img
-          width 100%
-          height 100%
-          object-fit cover
-          border-radius 50%
+          roundedImg()
 
       a
         text-decoration none
@@ -433,7 +432,7 @@ body
         display flex
         align-items center
         justify-content space-between
-        border-bottom 0.1rem solid #eee
+        grayBorderBottom()
         padding 1.5rem
         
         h4
@@ -446,7 +445,7 @@ body
       .header-post
         display flex
         align-items center
-        border-bottom 0.1rem solid #eee
+        grayBorderBottom()
         padding 1rem
 
         .header-image-wrapper
@@ -455,17 +454,14 @@ body
           margin-right 1.5rem
 
           img
-            height 100%
-            width 100%
-            object-fit cover
-            border-radius 50%
+            roundedImg()
         
         input
           width 35rem
           height 3rem
-          border .1rem solid #d6e1e9
-          border-radius 3rem
-          background-color #d6e1e9
+          border .1rem solid $light-gray
+          border-radius(3rem)
+          background-color $light-gray
           padding .4rem 1.5rem
           transition all 0.3s ease-in
 
@@ -487,7 +483,7 @@ body
       .post
         display flex
         padding 1.5rem
-        border-bottom 0.1rem solid #eee
+        grayBorderBottom()
 
         .user-avatar
           width 6rem
@@ -518,7 +514,7 @@ body
 
             i
               font-size 1.8rem
-              color #868383
+              color $dark-gray
               margin-right 6rem
               cursor pointer
               transition color 0.1s ease-in
@@ -530,14 +526,14 @@ body
           width 100%
           height 100%
           object-fit cover
-          border-radius 50%
+          border-radius(50%)
         
         .post-img
           width 48rem
           height 30rem
 
           img
-            border-radius 1rem
+            border-radius(1rem)
 
 
 
@@ -554,13 +550,13 @@ body
       .follow-heading
         font-size 1.8rem
         padding 1rem
-        border-bottom 0.1rem solid #eee
+        grayBorderBottom()
 
       .follow-user
         display flex
         align-items center
         padding 1.5rem
-        border-bottom 0.1rem solid #eee
+        grayBorderBottom()
 
         .follow-user-info
           font-size 1.6rem
@@ -572,10 +568,7 @@ body
           margin-right 2rem
 
           img
-            width 100%
-            height 100%
-            object-fit cover
-            border-radius 50%
+            roundedImg()
         
         .follow-btn
           margin-left auto
@@ -584,7 +577,7 @@ body
           color $main-color
           padding .7rem .5rem
           border .1rem solid $main-color
-          border-radius 2rem
+          border-radius(2rem)
           font-size 1.6rem
 
       .follow-link
@@ -605,7 +598,7 @@ body
     
         a
           text-decoration none
-          color #868383
+          color $dark-gray
           font-size 1.5rem
           margin 0 .7rem  
     // end of who to follow
@@ -623,7 +616,7 @@ body
     color #fff
     font-size 1.6rem
     border .1rem solid $main-color
-    border-radius 3rem
+    border-radius(3rem)
     cursor pointer
     box-shadow 0 .3rem 1rem rgba(0,0,0,0.3)
     transition background-color 0.3s ease-in
@@ -653,7 +646,7 @@ body
       left 50%
       top 25%
       transform translate(-50%, -50%)
-      border-radius 1.5rem
+      border-radius(1.5rem)
       display none
 
       .modal-header
@@ -661,7 +654,7 @@ body
         padding 1.5rem 2.5rem
         display flex
         align-items center
-        border-bottom 0.1rem solid #eee
+        grayBorderBottom()
 
         i
           font-size 2.5rem
@@ -674,7 +667,7 @@ body
           padding .8rem .5rem
           background-color $main-color
           color #fff
-          border-radius 1.5rem
+          border-radius(1.5rem)
           border .1rem solid $main-color
           opacity 0.5
           cursor pointer
@@ -689,17 +682,14 @@ body
           margin-right 1.5rem
 
           img
-            height 100%
-            width 100%
-            object-fit cover
-            border-radius 50%
+            roundedImg()
 
         .modal-input
           width 53rem
           padding 1rem 0 8rem 1rem
-          background-color #d6e1e9
+          background-color $light-gray
           border .1rem solid #eeeeee
-          border-radius 1.5rem
+          border-radius(1.5rem)
           font-size 1.6rem
 
           &:focus
@@ -740,7 +730,7 @@ body
               width 4rem
               height 4rem
               border .1rem solid $main-color
-              border-radius 50%
+              border-radius(50%)
               display flex
               justify-content center
               align-items center
@@ -800,10 +790,7 @@ body
           width 4rem
 
           img
-            height 100%
-            width 100%
-            object-fit cover
-            border-radius 50%
+            roundedImg()
 
         span
           margin-left auto
@@ -811,7 +798,7 @@ body
           height 3.5rem
           font-size 5rem
           border .1rem solid $main-color
-          border-radius 50%
+          border-radius(50%)
           display flex
           justify-content center
           align-items center
@@ -850,7 +837,7 @@ body
             a
               text-decoration none
               font-size 1.6rem
-              color #868383
+              color $dark-gray
 
               i
                 margin-right 1rem
@@ -872,20 +859,20 @@ body
     p
       margin-right 8rem
       font-size 1.6rem
-      color #868383
+      color $dark-gray
 
     .toggle
       background-color #777
       height 1.5rem
       width 4.5rem
-      border-radius 3rem
+      border-radius(3rem)
       position relative
       box-shadow inset 0 .2rem 1rem rgba(0,0,0,0.3)
 
       .circle
         width 2.1rem
         height 2.1rem
-        border-radius 50%
+        border-radius(50%)
         background-color #ddd
         position absolute
         top 50%
@@ -990,20 +977,20 @@ body
 @media(max-width: 800px)
   // main page
   .right
-    width 80%
+    width 80% !important
 
   .middle-content
 
     h1
-      margin-bottom 2rem
+      margin-bottom 2rem !important
     
     h4
-      margin-bottom 1rem
+      margin-bottom 1rem !important
     i
       display none
 
   .left-content
-    width 60%
+    width 60% !important
 
 @media(max-width: 700px)
   // login page
@@ -1041,7 +1028,7 @@ body
 @media(max-width: 600px)
   // main page
   .main-page
-    grid-template-rows 1fr min-content
+    grid-template-rows 1fr min-content !important
 
   .left
     display none !important
@@ -1055,22 +1042,22 @@ body
     width 40rem !important
 
   .login
-    grid-template-columns 5rem 8fr
+    grid-template-columns 5rem 8fr !important
 
     label, a
-      font-size 1.4rem
+      font-size 1.4rem !important
     
     .login-footer
-      padding-left 5rem
-      font-size 1.4rem
+      padding-left 5rem !important
+      font-size 1.4rem !important
   
   .login-modal
     width 30rem !important
 
-    p
-      font-size 1.4rem
+    p 
+      font-size 1.4rem !important
     i
-      top 2.5rem
+      top 2.5rem !important
 
   // new feeds page
 

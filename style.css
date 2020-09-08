@@ -51,6 +51,8 @@ body {
   background-color: #fff;
   color: #1aa1f5;
   border: 0.1rem solid #1aa1f5;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
   border-radius: 3rem;
   cursor: pointer;
   font-size: 1.4rem;
@@ -67,6 +69,8 @@ body {
   font-size: 1.6rem;
   padding: 0 1rem;
   border: 0.1rem solid #ddd;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
   border-radius: 0.5rem;
   background-color: #fff;
   transition: transform 0.1s ease-in;
@@ -113,6 +117,8 @@ body {
 .main-page .right .middle-content button {
   margin: 0.8rem 0;
   padding: 0.5rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
   border-radius: 4rem;
   border: 0.1rem solid #1aa1f5;
   font-size: 1.6rem;
@@ -252,6 +258,8 @@ body {
   padding: 1rem 1.5rem;
   background-color: #1aa1f5;
   color: #fff;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
   border-radius: 4rem;
   border: 0.1rem solid #1aa1f5;
   font-size: 1.5rem;
@@ -264,6 +272,8 @@ body {
   width: 25rem;
   margin-bottom: 1rem;
   border: 0.1rem solid #ddd;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
   border-radius: 0.5rem;
   padding-left: 1rem;
   font-size: 1.5rem;
@@ -302,7 +312,9 @@ body {
   padding: 2rem;
   text-align: center;
   box-shadow: 0 0 0.7rem rgba(0,0,0,0.3);
-  border-radius: 0 0 1rem 1rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   font-size: 1.6rem;
   color: #868383;
   display: none;
@@ -348,6 +360,8 @@ body {
 .feeds-page .feeds-nav .search-bar input {
   width: 35rem;
   height: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
   border-radius: 3rem;
   border: 0.1rem solid #d6e1e9;
   background-color: #d6e1e9;
@@ -378,6 +392,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 .feeds-page .feeds-nav .user a {
@@ -427,15 +443,19 @@ body {
   margin-right: 1.5rem;
 }
 .feeds-page .feeds-content .feeds-header .header-post .header-image-wrapper img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 .feeds-page .feeds-content .feeds-header .header-post input {
   width: 35rem;
   height: 3rem;
   border: 0.1rem solid #d6e1e9;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
   border-radius: 3rem;
   background-color: #d6e1e9;
   padding: 0.4rem 1.5rem;
@@ -499,6 +519,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 .feeds-page .feeds-content .posts .post .post-img {
@@ -506,6 +528,8 @@ body {
   height: 30rem;
 }
 .feeds-page .feeds-content .posts .post .post-img img {
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
   border-radius: 1rem;
 }
 .feeds-page .feeds-content .follow {
@@ -539,6 +563,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 .feeds-page .feeds-content .follow .follow-user .follow-btn {
@@ -548,6 +574,8 @@ body {
   color: #1aa1f5;
   padding: 0.7rem 0.5rem;
   border: 0.1rem solid #1aa1f5;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
   border-radius: 2rem;
   font-size: 1.6rem;
 }
@@ -583,6 +611,8 @@ body {
   color: #fff;
   font-size: 1.6rem;
   border: 0.1rem solid #1aa1f5;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
   border-radius: 3rem;
   cursor: pointer;
   box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.3);
@@ -612,6 +642,8 @@ body {
   left: 50%;
   top: 25%;
   transform: translate(-50%, -50%);
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
   border-radius: 1.5rem;
   display: none;
 }
@@ -633,6 +665,8 @@ body {
   padding: 0.8rem 0.5rem;
   background-color: #1aa1f5;
   color: #fff;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
   border-radius: 1.5rem;
   border: 0.1rem solid #1aa1f5;
   opacity: 0.5;
@@ -648,9 +682,11 @@ body {
   margin-right: 1.5rem;
 }
 .feeds-page .modal-wrapper-display .modal .modal-body .modal-img img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 .feeds-page .modal-wrapper-display .modal .modal-body .modal-input {
@@ -658,6 +694,8 @@ body {
   padding: 1rem 0 8rem 1rem;
   background-color: #d6e1e9;
   border: 0.1rem solid #eee;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
   border-radius: 1.5rem;
   font-size: 1.6rem;
 }
@@ -699,6 +737,8 @@ body {
   width: 4rem;
   height: 4rem;
   border: 0.1rem solid #1aa1f5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -755,9 +795,11 @@ body {
   width: 4rem;
 }
 .feeds-page .sidebar-wrapper .sidebar .sidebar-user .side-user-img img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 .feeds-page .sidebar-wrapper .sidebar .sidebar-user span {
@@ -766,6 +808,8 @@ body {
   height: 3.5rem;
   font-size: 5rem;
   border: 0.1rem solid #1aa1f5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -836,6 +880,8 @@ body {
   background-color: #777;
   height: 1.5rem;
   width: 4.5rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
   border-radius: 3rem;
   position: relative;
   box-shadow: inset 0 0.2rem 1rem rgba(0,0,0,0.3);
@@ -843,6 +889,8 @@ body {
 .feeds-page .dark-mode .toggle .circle {
   width: 2.1rem;
   height: 2.1rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   background-color: #ddd;
   position: absolute;
@@ -941,19 +989,19 @@ body {
 }
 @media (max-width: 800px) {
   .right {
-    width: 80%;
+    width: 80% !important;
   }
   .middle-content h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
   }
   .middle-content h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
   }
   .middle-content i {
     display: none;
   }
   .left-content {
-    width: 60%;
+    width: 60% !important;
   }
 }
 @media (max-width: 700px) {
@@ -992,7 +1040,7 @@ body {
 }
 @media (max-width: 600px) {
   .main-page {
-    grid-template-rows: 1fr min-content;
+    grid-template-rows: 1fr min-content !important;
   }
   .left {
     display: none !important;
@@ -1006,24 +1054,24 @@ body {
     width: 40rem !important;
   }
   .login {
-    grid-template-columns: 5rem 8fr;
+    grid-template-columns: 5rem 8fr !important;
   }
   .login label,
   .login a {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
   .login .login-footer {
-    padding-left: 5rem;
-    font-size: 1.4rem;
+    padding-left: 5rem !important;
+    font-size: 1.4rem !important;
   }
   .login-modal {
     width: 30rem !important;
   }
   .login-modal p {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
   .login-modal i {
-    top: 2.5rem;
+    top: 2.5rem !important;
   }
   .header-post input {
     width: 27rem !important;
