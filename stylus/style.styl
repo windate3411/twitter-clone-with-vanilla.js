@@ -17,7 +17,7 @@ body
 .main-page
   width 100%
   height 100vh
-  display none
+  display grid
   grid-template-columns repeat(2,1fr)
   grid-template-rows 1fr min-content
 
@@ -340,7 +340,7 @@ body
 .feeds-page
   width 100%
   height 100vh
-  display grid
+  display none
 
   .feeds-nav
     position fixed
@@ -911,3 +911,78 @@ body
 
 // end of feeds page
 
+// RWD
+@media(max-width: 1300px)
+
+  // main page
+  .middle-content
+    width 60%
+  
+  .main-page-footer ul
+    flex-wrap wrap
+
+    li
+      margin-bottom 1rem
+
+@media(max-width: 1100px)
+  // main page
+  .main-page
+    grid-template-columns 1fr
+    grid-template-rows repeat(2,fr) min-content 
+
+    .right
+      grid-area 1/1/2/2
+      width 70%
+      margin auto
+
+      .right-content-form
+        display none
+    
+    .left
+      grid-row 2/3
+
+      .left-content
+        width 50%
+        margin auto
+
+        h3
+          line-height 3rem
+    
+    .main-page-footer
+      grid-row 3/4
+
+@media(max-width: 800px)
+  // main page
+  .right
+    width 80%
+
+  .middle-content
+
+    h1
+      margin-bottom 2rem
+    
+    h4
+      margin-bottom 1rem
+    i
+      display none
+
+  .left-content
+    width 60%
+
+@media(max-width: 600px)
+  // main page
+  .main-page
+    grid-template-rows 1fr min-content
+
+  .left
+    display none !important
+
+  .right
+    grid-row 1/2
+    width 90%
+
+@media(max-width: 500px)
+  // main page
+  .middle-content h1
+    font-size 2.5rem
+// end of RWD
