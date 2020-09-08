@@ -915,6 +915,11 @@ body
 // end of feeds page
 
 // RWD
+@media(max-width: 1600px)
+  // new feeds page
+  .follow
+    left 58.5%
+
 @media(max-width: 1300px)
 
   // main page
@@ -961,6 +966,19 @@ body
   .login-modal
     width 60rem !important
 
+  // new feeds page
+  .feeds-content
+    grid-template-columns minmax(5rem,1fr) 2fr minmax(5rem,1fr) !important
+
+  .search-bar
+    display none !important
+
+  .follow
+    display none
+
+  .post-btn
+    left: 85% !important
+
 @media(max-width: 900px)
   // login page
   .login-page-nav ul, .login
@@ -993,8 +1011,32 @@ body
     width 50rem !important
 
   .login-modal
-    width 40rem
+    width 40rem !important
 
+  // new feeds page
+  .user a
+  .user i
+    display none  
+  
+  .feeds-content
+    grid-template-columns 1fr !important
+
+    .feeds-header, .posts
+      grid-column 1/-1 !important
+    
+  .modal
+    width 90% !important
+    
+    .modal-img
+      flex-shrink 0 !important
+
+  .post-btn
+    left: 75% 
+    font-size 1.8rem !important
+  
+  .sidebar-list-1 li
+  .sidebar-list-2 li
+    margin-bottom 1.5rem !important
 
 @media(max-width: 600px)
   // main page
@@ -1029,7 +1071,22 @@ body
       font-size 1.4rem
     i
       top 2.5rem
-        
+
+  // new feeds page
+
+  .header-post input
+    width 27rem !important
+
+  .post-text
+    width 90% !important
+
+  .post-img
+    width 90% !important
+    height 25rem !important
+
+  .post-btn
+    left 70% !important
+
 @media(max-width: 500px)
   // main page
   .middle-content h1

@@ -868,6 +868,11 @@ body {
 .feeds-page .border-color {
   border-color: #444 !important;
 }
+@media (max-width: 1600px) {
+  .follow {
+    left: 58.5%;
+  }
+}
 @media (max-width: 1300px) {
   .middle-content {
     width: 60%;
@@ -912,6 +917,18 @@ body {
   .login-modal {
     width: 60rem !important;
   }
+  .feeds-content {
+    grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr) !important;
+  }
+  .search-bar {
+    display: none !important;
+  }
+  .follow {
+    display: none;
+  }
+  .post-btn {
+    left: 85% !important;
+  }
 }
 @media (max-width: 900px) {
   .login-page-nav ul,
@@ -945,7 +962,32 @@ body {
     width: 50rem !important;
   }
   .login-modal {
-    width: 40rem;
+    width: 40rem !important;
+  }
+  .user a,
+  .user i {
+    display: none;
+  }
+  .feeds-content {
+    grid-template-columns: 1fr !important;
+  }
+  .feeds-content .feeds-header,
+  .feeds-content .posts {
+    grid-column: 1/-1 !important;
+  }
+  .modal {
+    width: 90% !important;
+  }
+  .modal .modal-img {
+    flex-shrink: 0 !important;
+  }
+  .post-btn {
+    left: 75%;
+    font-size: 1.8rem !important;
+  }
+  .sidebar-list-1 li,
+  .sidebar-list-2 li {
+    margin-bottom: 1.5rem !important;
   }
 }
 @media (max-width: 600px) {
@@ -982,6 +1024,19 @@ body {
   }
   .login-modal i {
     top: 2.5rem;
+  }
+  .header-post input {
+    width: 27rem !important;
+  }
+  .post-text {
+    width: 90% !important;
+  }
+  .post-img {
+    width: 90% !important;
+    height: 25rem !important;
+  }
+  .post-btn {
+    left: 70% !important;
   }
 }
 @media (max-width: 500px) {
