@@ -819,3 +819,36 @@ body {
   opacity: 1;
   visibility: visible;
 }
+.feeds-page .dark-mode {
+  display: flex;
+  align-items: center;
+}
+.feeds-page .dark-mode p {
+  margin-right: 8rem;
+  font-size: 1.6rem;
+  color: #868383;
+}
+.feeds-page .dark-mode .toggle {
+  background-color: #777;
+  height: 1.5rem;
+  width: 4.5rem;
+  border-radius: 3rem;
+  position: relative;
+  box-shadow: inset 0 0.2rem 1rem rgba(0,0,0,0.3);
+}
+.feeds-page .dark-mode .toggle .circle {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background-color: #ddd;
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%);
+  box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.3);
+  transition: all 0.1s linear;
+}
+.feeds-page .dark-mode .toggle .move {
+  left: 2.4rem;
+  background-color: #117abb;
+}
